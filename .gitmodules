@@ -1,0 +1,3 @@
+[submodule "Periscope-hardware"]
+	path = Periscope-hardware
+	url = https://github.com/twizzter/Periscope-hardware
