@@ -17,7 +17,7 @@ def aul():
         label = doc.getObject('chlabel'+str(idx))
         label.ViewObject.BackgroundColor = (1.00,0.00,0.00)
         label.LabelText = 'ch' + s.Label2
-        label.BasePosition = s.LinkPlacement.Base
+        label.setExpression('BasePosition', u'<<' + s.Label + '>>.LinkPlacement.Base')
         labels.append(label)
 
     if not doc.getObject('LGroup'):
@@ -26,6 +26,7 @@ def aul():
     gr = doc.getObject('LGroup')
     gr.Label="Label Group"
     gr.addObjects(labels)
+    doc.recompute()
 
 if __name__ == '__main__':
     aul()
