@@ -195,7 +195,7 @@ def get_json_tail():
    ],
     "type" : "Lighthouse_HMD",
     "firmware_config": {
-         "sensor_env_on_pin_a":"0x7FFFE000"
+         "sensor_env_on_pin_a":"0x7FFFF800"
     }
 }"""
     return tail

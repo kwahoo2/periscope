@@ -55,7 +55,7 @@ Before running the script, set channel map for every sensor. Just edit Label2 (c
 
 Notice:
 
-`"sensor_env_on_pin_a":"0x7FFFE000"`
+`"sensor_env_on_pin_a":"0x7FFFF800"`
 
 in the created JSON. This is needed because the SIP pins for sensors 1-11 (channel map 0-10) are reversed.
 
